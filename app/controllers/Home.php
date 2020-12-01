@@ -5,10 +5,10 @@ class Home extends Controller {
         $this->view('home/index');
     } 
     public function form(){
-        echo "esse e seu formulario";
+        echo "Formulário";
     }
     public function cadastro(){
-        echo "voce foi cadastrado";
+        echo "Cadastro realizado com sucesso";
     }
 }
 ?>

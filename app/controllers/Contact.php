@@ -29,7 +29,11 @@ class Contact extends Controller {
         $idade = $_POST["idade"];
         $aluno = $this->model('Alunos');
        if($aluno->createAluno([$nome,$idade]))
+<<<<<<< HEAD
+       echo "Cadastro Concluido";
+=======
        echo "cadastro executado com sucesso!!";
+>>>>>>> 804559f62d79c513d70717ffdef99564e125fa33
     }
     public function alteraAluno(){
         $id = $_POST["id"];
@@ -38,7 +42,11 @@ class Contact extends Controller {
 
         $aluno = $this->model('Alunos');
        if($aluno->alterAluno([$nome,$idade,$id]))
+<<<<<<< HEAD
+       echo "Cadastro Alterado";
+=======
        echo "cadastro alterado com sucesso!!";
+>>>>>>> 804559f62d79c513d70717ffdef99564e125fa33
     }
 
     public function  formAlter($param1= '', $param2= '', $param3= ''){
@@ -50,7 +58,11 @@ class Contact extends Controller {
         $id = $param2;
         $aluno = $this->model('Alunos');
        if($aluno->deleteAluno([$id]))
+<<<<<<< HEAD
+       echo "Cadastro Deletado";
+=======
        echo "cadastro excluido com sucesso!!";
+>>>>>>> 804559f62d79c513d70717ffdef99564e125fa33
         
     }
 }
